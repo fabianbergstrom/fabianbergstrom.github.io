@@ -2,11 +2,15 @@
 <html>
   <body>
     <h1>fabian här</h1>
-    <p id="text">bruh poggers</p>
-    <button type="button" id="btn">click</button>
+    <p id="text">0</p>
+    <button type="button" id="btn" onclick="onClick()">click</button>
     <script>
-      var x = "test";
-      document.getElementById("text").innerHTML = x + " test2";
+      var x = 0;
+      document.getElementById("text").innerHTML = x;
+      function onClick() {
+        x = x + 1;
+        document.getElementById("text").innerHTML = x;
+      }
     </script>
   </body>
 </html>
