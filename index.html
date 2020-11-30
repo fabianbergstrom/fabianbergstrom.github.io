@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <h1>fabian här</h1>
-    <p id="text">0</p>
+    <h1 id="number">0</h1>
     <button type="button" id="btn" onclick="onClick()">click</button>
     <script>
       var x = 0;
-      document.getElementById("text").innerHTML = x;
+      var y = 1;
+      var number = document.getElementById("number").innerHTML = x;
+      
+      number = x;
       function onClick() {
-        x = x + 1;
-        document.getElementById("text").innerHTML = x;
+        x = x + y;
+        number = x;
       }
     </script>
   </body>
