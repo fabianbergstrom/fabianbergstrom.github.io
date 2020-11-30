@@ -6,12 +6,12 @@
     <script>
       var x = 0;
       var y = 1;
-      var number = document.getElementById("number").innerHTML;
+      var number = document.getElementById("number");
       
-      number = x;
+      number.innerHTML = x;
       function onClick() {
         x = x + y;
-        number = x;
+        number.innerHTML = x;
       }
     </script>
   </body>
